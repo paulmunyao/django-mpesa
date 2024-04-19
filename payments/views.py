@@ -21,7 +21,7 @@ def stk_push_callback(request):
             party_a = request.GET["phone_number"]
             amount = int(request.GET["amount"])
             account_reference = "iLAB Africa Digital Learning"
-            transaction_description = "Your transaction is successful"
+            transaction_desc = "Your transaction is successful"
             callback_url = (
                 "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
             )
@@ -29,7 +29,7 @@ def stk_push_callback(request):
                 party_a,
                 amount,
                 account_reference,
-                transaction_description,
+                transaction_desc,
                 callback_url,
             )
             return HttpResponse(response)
@@ -48,6 +48,8 @@ def callback(request):
             client = MpesaClient()
             party_a = request.GET["phone_number"]
             amount = int(request.GET["amount"])
+            account_reference = ["account_reference"]
+            transaction_desc = ["transaction_desc"]
             result = {
                 "Body":{
                     "stkCallback":{
@@ -59,6 +61,8 @@ def callback(request):
                             "Item": [
                                 {"Name": "party_a", "Value": party_a},
                                 {"Name": "amount", "Value": amount},
+                                {"Name": "account_reference", "Value": account_reference},
+                                {"Name": "transaction_desc", "Value": transaction_desc},
                             ]
                         }
                     }
