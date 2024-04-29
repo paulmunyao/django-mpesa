@@ -23,7 +23,7 @@ def stk_push_callback(request):
             account_reference = "iLAB Africa Digital Learning"
             transaction_desc = "Your transaction is successful"
             callback_url = (
-                "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
+                "https://fadc-41-80-116-147.ngrok-free.app/"
             )
             response = client.stk_push(
                 party_a,
@@ -42,12 +42,12 @@ def stk_push_callback(request):
         return HttpResponse("Method not allowed", status=405)
 
 def callback(request):
-    if request.method == "POST":
+    if request.method == "GET":
         try:
             # Extracting necessary parameters from the callback request
             client = MpesaClient()
-            party_a = request.POST["phone_number"]
-            amount = int(request.POST["amount"])
+            party_a = request.GET["phone_number"]
+            amount = int(request.GET["amount"])
             account_reference = ["account_reference"]
             transaction_desc = ["transaction_desc"]
             result = {
