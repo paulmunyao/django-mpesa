@@ -42,12 +42,12 @@ def stk_push_callback(request):
         return HttpResponse("Method not allowed", status=405)
 
 def callback(request):
-    if request.method == "GET":
+    if request.method == "POST":
         try:
             # Extracting necessary parameters from the callback request
             client = MpesaClient()
-            party_a = request.GET["phone_number"]
-            amount = int(request.GET["amount"])
+            party_a = request.POST["phone_number"]
+            amount = int(request.POST["amount"])
             account_reference = ["account_reference"]
             transaction_desc = ["transaction_desc"]
             result = {
