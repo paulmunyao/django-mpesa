@@ -1,0 +1,30 @@
+[
+  {
+    "name": "payments",
+    "type": "package",
+    "children": [
+      {
+        "name": "views",
+        "type": "class",
+        "children": [
+          {
+            "name": "callback",
+            "type": "function",
+            "static": true,
+            "location": "payments/views.py:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /callback/"
+      }
+    ]
+  }
+]

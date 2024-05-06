@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /callback/",
+    "parameters": "(phone_number,amount)",
+    "status": 200
+  }
+]

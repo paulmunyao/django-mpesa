@@ -1,1 +1,131 @@
-{"version": "1.9", "metadata": {"language": {"name": "python", "engine": "CPython", "version": "3.10.12"}, "client": {"name": "appmap", "url": "https://github.com/applandinc/appmap-python"}, "git": {"repository": "https://github.com/paulmunyao/django-mpesa.git", "branch": "master", "commit": "259710603ad2c9d660997cf0e7fa934f34817b16"}, "frameworks": [{"name": "Django", "version": "5.0.2"}], "name": "GET / (404) - 19:33:51.601", "timestamp": 1714419231.601178, "recorder": {"name": "record_requests", "type": "requests"}}, "events": [{"http_server_request": {"request_method": "GET", "protocol": "HTTP/1.1", "path_info": "/", "mime_type": "text/plain", "headers": {"Content-Length": "", "Content-Type": "text/plain", "Host": "2687-41-80-116-147.ngrok-free.app", "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", "Accept-Encoding": "gzip, deflate, br, zstd", "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8", "Cache-Control": "no-cache", "Cookie": "abuse_interstitial=2687-41-80-116-147.ngrok-free.app", "Pragma": "no-cache", "Priority": "u=0, i", "Sec-Ch-Ua": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\"", "Sec-Ch-Ua-Mobile": "?0", "Sec-Ch-Ua-Platform": "\"Linux\"", "Sec-Fetch-Dest": "document", "Sec-Fetch-Mode": "navigate", "Sec-Fetch-Site": "same-origin", "Sec-Fetch-User": "?1", "Upgrade-Insecure-Requests": "1", "X-Forwarded-For": "41.80.116.147", "X-Forwarded-Host": "2687-41-80-116-147.ngrok-free.app", "X-Forwarded-Proto": "https"}}, "message": [], "id": 1, "event": "call", "thread_id": 1}, {"receiver": {"object_id": 123473068218144, "value": "<Template template_string=\"<!DOCTYPE html><htm...\">", "class": "django.template.base.Template"}, "path": "<unknown source>", "id": 2, "event": "call", "thread_id": 1, "defined_class": "<templates>.UnknownSource", "method_id": "render", "static": false}, {"parent_id": 2, "elapsed": 0.0006374100012180861, "id": 3, "event": "return", "thread_id": 1}, {"http_server_response": {"status_code": 404, "mime_type": "text/html; charset=utf-8", "headers": {"Content-Type": "text/html; charset=utf-8", "X-Frame-Options": "DENY", "Content-Length": "2441", "X-Content-Type-Options": "nosniff", "Referrer-Policy": "same-origin", "Cross-Origin-Opener-Policy": "same-origin"}}, "parent_id": 1, "elapsed": 0.01565523499994015, "id": 4, "event": "return", "thread_id": 1}], "classMap": []}
+{
+  "events": [
+    {
+      "http_server_request": {
+        "request_method": "GET",
+        "protocol": "HTTP/1.1",
+        "path_info": "/",
+        "mime_type": "text/plain",
+        "headers": {
+          "Content-Length": "",
+          "Content-Type": "text/plain",
+          "Host": "2687-41-80-116-147.ngrok-free.app",
+          "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "Accept-Encoding": "gzip, deflate, br, zstd",
+          "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
+          "Cache-Control": "no-cache",
+          "Cookie": "abuse_interstitial=2687-41-80-116-147.ngrok-free.app",
+          "Pragma": "no-cache",
+          "Priority": "u=0, i",
+          "Sec-Ch-Ua": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\"",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "Sec-Ch-Ua-Platform": "\"Linux\"",
+          "Sec-Fetch-Dest": "document",
+          "Sec-Fetch-Mode": "navigate",
+          "Sec-Fetch-Site": "same-origin",
+          "Sec-Fetch-User": "?1",
+          "Upgrade-Insecure-Requests": "1",
+          "X-Forwarded-For": "41.80.116.147",
+          "X-Forwarded-Host": "2687-41-80-116-147.ngrok-free.app",
+          "X-Forwarded-Proto": "https"
+        }
+      },
+      "id": 1,
+      "event": "call",
+      "thread_id": 1
+    },
+    {
+      "receiver": {
+        "object_id": 123473068218144,
+        "value": "<Template template_string=\"<!DOCTYPE html><htm...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "<unknown source>",
+      "id": 2,
+      "event": "call",
+      "thread_id": 1,
+      "defined_class": "<templates>.UnknownSource",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 2,
+      "elapsed": 0.0006374100012180861,
+      "id": 3,
+      "event": "return",
+      "thread_id": 1
+    },
+    {
+      "http_server_response": {
+        "status_code": 404,
+        "mime_type": "text/html; charset=utf-8",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8",
+          "X-Frame-Options": "DENY",
+          "Content-Length": "2441",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "parent_id": 1,
+      "elapsed": 0.01565523499994015,
+      "id": 4,
+      "event": "return",
+      "thread_id": 1
+    }
+  ],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.10.12"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "https://github.com/paulmunyao/django-mpesa.git",
+      "branch": "master",
+      "commit": "259710603ad2c9d660997cf0e7fa934f34817b16"
+    },
+    "frameworks": [
+      {
+        "name": "Django",
+        "version": "5.0.2"
+      }
+    ],
+    "name": "GET / (404) - 19:33:51.601",
+    "timestamp": 1714419231.601178,
+    "recorder": {
+      "name": "record_requests",
+      "type": "requests"
+    }
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /"
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/UnknownSource",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "language": {
+    "name": "python",
+    "engine": "CPython",
+    "version": "3.10.12"
+  },
+  "client": {
+    "name": "appmap",
+    "url": "https://github.com/applandinc/appmap-python"
+  },
+  "git": {
+    "repository": "https://github.com/paulmunyao/django-mpesa.git",
+    "branch": "master",
+    "commit": "f5b5cd79df4a1f3ded74c826a6ea63b1ec02a6b4"
+  },
+  "frameworks": [
+    {
+      "name": "Django",
+      "version": "5.0.2"
+    }
+  ],
+  "name": "GET /favicon.ico (404) - 11:33:52.190",
+  "timestamp": 1714390432.190102,
+  "recorder": {
+    "name": "record_requests",
+    "type": "requests"
+  }
+}

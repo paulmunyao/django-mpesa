@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "GET /stk-push-callback/",
+    "callee": "payments/views"
+  },
+  {
+    "caller": "payments/views",
+    "callee": "SELECT \"django_daraja_accesstoken\".\"id\", \"django_daraja_accesstoken\".\"token\", \"django_daraja_accesstoken\".\"created_at\" FROM \"django_daraja_accesstoken\" ORDER BY \"django_daraja_accesstoken\".\"id\" ASC LIMIT 1"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "payments",
+    "type": "package",
+    "children": [
+      {
+        "name": "views",
+        "type": "class",
+        "children": [
+          {
+            "name": "stk_push_callback",
+            "type": "function",
+            "static": true,
+            "location": "payments/views.py:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /stk-push-callback/"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"django_daraja_accesstoken\".\"id\", \"django_daraja_accesstoken\".\"token\", \"django_daraja_accesstoken\".\"created_at\" FROM \"django_daraja_accesstoken\" ORDER BY \"django_daraja_accesstoken\".\"id\" ASC LIMIT 1"
+      },
+      {
+        "type": "query",
+        "name": "BEGIN"
+      },
+      {
+        "type": "query",
+        "name": "DELETE FROM \"django_daraja_accesstoken\""
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"django_daraja_accesstoken\" (\"token\", \"created_at\") VALUES ('RtyLpeA3IoudIjUoGZAVeDbd1Snz', '2024-05-06 11:19:04.562793') RETURNING \"django_daraja_accesstoken\".\"id\""
+      }
+    ]
+  }
+]
