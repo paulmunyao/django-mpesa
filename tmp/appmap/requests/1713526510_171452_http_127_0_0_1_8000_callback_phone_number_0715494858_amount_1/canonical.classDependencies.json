@@ -1,6 +1,0 @@
-[
-  {
-    "caller": "GET /callback/",
-    "callee": "payments/views"
-  }
-]
